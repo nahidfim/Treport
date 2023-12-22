@@ -14,12 +14,12 @@ const styles = StyleSheet.create({
         fontStyle: 'bold',
         flexGrow: 1,
     },
-    itemcode: {
+    tblno: {
         width: '40%',
         borderRightColor: borderColor,
         borderRightWidth: 1,
     },
-    itemname: {
+    lanno: {
         width: '60%',
         borderRightColor: borderColor,
         borderRightWidth: 1,
@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
 
   const InvoiceTableHeader = () => (
       <View style={styles.container}>
-          <Text style={styles.itemcode}>Item Code</Text>
-          <Text style={styles.itemname}>Item Name</Text>
+          <Text style={styles.tblno}>TableNo.</Text>
+          <Text style={styles.lanno}>LanNo.</Text>
         <Text style={styles.totalorder}>Total order</Text>
         <Text style={styles.amount}>Total Amount</Text>
     </View>
