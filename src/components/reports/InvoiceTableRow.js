@@ -11,14 +11,14 @@ const styles = StyleSheet.create({
         height: 24,
         fontStyle: 'bold',
     },
-    tblno: {
+    itemcode: {
         width: '40%',
         textAlign: 'center',
         borderRightColor: borderColor,
         borderRightWidth: 1,
         paddingRight: 8,
     },
-    lanno: {
+    itemname: {
         width: '60%',
         textAlign: 'center',
         borderRightColor: borderColor,
@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
 const InvoiceTableRow = ({items}) => {
     const rows = items.map( item => 
         <View style={styles.row} key={item.sno.toString()}>
-            <Text style={styles.tblno}>{item.tblno}</Text>
-            <Text style={styles.lanno}>{item.lanno}</Text>
+            <Text style={styles.itemcode}>{item.itemcode}</Text>
+            <Text style={styles.itemname}>{item.itemname}</Text>
             <Text style={styles.totalorder}>{item.totalorder}</Text>
             <Text style={styles.totalamount}>{item.totalamount}</Text>
         </View>
